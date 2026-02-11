@@ -1,4 +1,4 @@
-module github.com/stephenafamo/bob
+module github.com/aronsx/bob
 
 go 1.24.0
 

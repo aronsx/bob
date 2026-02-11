@@ -6,10 +6,10 @@ import (
 	"maps"
 	"slices"
 
+	"github.com/aronsx/bob/gen/bobgen-helpers/parser"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
 	"github.com/gofrs/uuid"
-	"github.com/stephenafamo/bob/gen/bobgen-helpers/parser"
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
 	"github.com/stephenafamo/scan"
 	"github.com/stephenafamo/scan/stdscan"
 )

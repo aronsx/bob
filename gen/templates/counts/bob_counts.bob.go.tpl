@@ -1,10 +1,10 @@
 {{$.Importer.Import "context"}}
 {{$.Importer.Import "io"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "github.com/stephenafamo/bob/orm"}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob/orm"}}
 {{$.Importer.Import "github.com/stephenafamo/scan"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s" $.Dialect)}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
 
 {{block "helpers/count_variables" . -}}
 var (

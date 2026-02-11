@@ -1,8 +1,8 @@
 package mysql
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/mysql/dialect"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/mysql/dialect"
 )
 
 func Insert(queryMods ...bob.Mod[*dialect.InsertQuery]) bob.BaseQuery[*dialect.InsertQuery] {

@@ -5,13 +5,13 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/aronsx/bob/gen"
+	helpers "github.com/aronsx/bob/gen/bobgen-helpers"
+	"github.com/aronsx/bob/gen/drivers"
 	"github.com/lib/pq"
-	"github.com/stephenafamo/bob/gen"
-	helpers "github.com/stephenafamo/bob/gen/bobgen-helpers"
-	"github.com/stephenafamo/bob/gen/drivers"
 )
 
-const pgtypesImport = `"github.com/stephenafamo/bob/types/pgtypes"`
+const pgtypesImport = `"github.com/aronsx/bob/types/pgtypes"`
 
 type Enum struct {
 	Schema string

@@ -4,9 +4,9 @@
 {{$.Importer.Import "iter"}}
 {{$.Importer.Import "_" "embed"}}
 {{$.Importer.Import "context"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "github.com/stephenafamo/bob/orm"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob/orm"}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
 
 //go:embed {{.QueryFile.BaseName}}.bob.sql
 var formattedQueries_{{.QueryFile.BaseName}} string
@@ -48,7 +48,7 @@ var {{$lowerName}}SQL = formattedQueries_{{$.QueryFile.BaseName}}[{{$.QueryFile.
 {{$args := list }}
 {{range $arg := $query.Args -}}
   {{if $arg.CanBeMultiple}}
-    {{$.Importer.Import "github.com/stephenafamo/bob/expr"}}
+    {{$.Importer.Import "github.com/aronsx/bob/expr"}}
   {{end}}
 
   {{ $argName := titleCase $arg.Col.Name }}

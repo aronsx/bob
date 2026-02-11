@@ -925,7 +925,7 @@ func TestQueryWithWhere(t *testing.T) {
 	}
 
 	// Query with Where and Limit
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/sqlite/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/sqlite/sm"}}
 	videos, err = models.Videos.Query(
 		models.SelectWhere.Videos.UserID.EQ(user2.ID),
 		sm.Limit(2),
@@ -960,7 +960,7 @@ func TestQueryWithOrderBy(t *testing.T) {
 	}
 
 	// Query with ORDER BY DESC
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/sqlite/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/sqlite/sm"}}
 	users, err := models.Users.Query(
 		sm.OrderBy(models.Users.Columns.ID).Desc(),
 	).All(ctx, tx)
@@ -1008,7 +1008,7 @@ func TestQueryWithLimitOffset(t *testing.T) {
 	New().NewUserWithContext(ctx).CreateManyOrFail(ctx, t, tx, 10)
 
 	// Query with limit
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/sqlite/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/sqlite/sm"}}
 	users, err := models.Users.Query(
 		sm.Limit(5),
 		sm.OrderBy(models.Users.Columns.ID).Asc(),
@@ -1117,7 +1117,7 @@ func TestQueryWithJoin(t *testing.T) {
 	}
 
 	// Query videos with join to users
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/sqlite/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/sqlite/sm"}}
 	videos, err := models.Videos.Query(
 		sm.InnerJoin(models.Users.Name()).On(
 			models.Videos.Columns.UserID.EQ(models.Users.Columns.ID),
@@ -1374,7 +1374,7 @@ func TestSelectJoins(t *testing.T) {
 
 	// Query videos using InnerJoin on User
 	// SQLite uses a different approach than MySQL/PostgreSQL
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/sqlite/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/sqlite/sm"}}
 	videos, err := models.Videos.Query(
 		sm.InnerJoin(models.Users.Name()).On(
 			models.Videos.Columns.UserID.EQ(models.Users.Columns.ID),

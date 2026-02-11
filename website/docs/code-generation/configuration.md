@@ -89,7 +89,7 @@ The details of the driver configuration are detailed in the documentation for ea
 
 ## General Configuration
 
-The configuration is unmarshalled into the following [Config](https://pkg.go.dev/github.com/stephenafamo/bob/gen#Config) struct.
+The configuration is unmarshalled into the following [Config](https://pkg.go.dev/github.com/aronsx/bob/gen#Config) struct.
 
 :::note
 
@@ -259,7 +259,7 @@ types:
     # ......
     imports:
       - '"encoding/json"'
-      - '"github.com/stephenafamo/bob/types"'
+      - '"github.com/aronsx/bob/types"'
 ```
 
 #### Example Types Configuration
@@ -296,7 +296,7 @@ types:
     # Any imports that are needed for the type
     imports:
       - '"encoding/json"'
-      - '"github.com/stephenafamo/bob/types"'
+      - '"github.com/aronsx/bob/types"'
     # To be used in factory.random_type
     # a variable `f` of type `faker.Faker` is available
     # another variable `limits` which is a slice of strings with any limits

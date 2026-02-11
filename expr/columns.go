@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"slices"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/internal"
-	"github.com/stephenafamo/bob/internal/mappings"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/internal"
+	"github.com/aronsx/bob/internal/mappings"
 )
 
 // NewColumnsExpr returns a [ColumnsExpr] object with the given column names

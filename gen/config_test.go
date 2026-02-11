@@ -3,8 +3,8 @@ package gen
 import (
 	"testing"
 
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
 )
 
 func TestColumnFilter_IsEmpty(t *testing.T) {

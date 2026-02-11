@@ -5,9 +5,9 @@
 {{$.Importer.Import "context"}}
 {{$.Importer.Import "strings"}}
 {{$.Importer.Import "github.com/google/go-cmp/cmp"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "testutils" "github.com/stephenafamo/bob/test/utils"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s" $.Dialect)}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "testutils" "github.com/aronsx/bob/test/utils"}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s" $.Dialect)}}
 
 
 {{$txType := "bob.Tx"}}

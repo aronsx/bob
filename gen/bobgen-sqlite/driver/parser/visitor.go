@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 
 	"github.com/antlr4-go/antlr/v4"
-	"github.com/stephenafamo/bob"
-	antlrhelpers "github.com/stephenafamo/bob/gen/bobgen-helpers/parser/antlrhelpers"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob"
+	antlrhelpers "github.com/aronsx/bob/gen/bobgen-helpers/parser/antlrhelpers"
+	"github.com/aronsx/bob/internal"
 	sqliteparser "github.com/stephenafamo/sqlparser/sqlite"
 )
 

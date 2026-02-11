@@ -14,9 +14,9 @@ import (
 	"strings"
 
 	"github.com/aarondl/opt/null"
-	helpers "github.com/stephenafamo/bob/gen/bobgen-helpers"
-	"github.com/stephenafamo/bob/gen/bobgen-sqlite/driver/parser"
-	"github.com/stephenafamo/bob/gen/drivers"
+	helpers "github.com/aronsx/bob/gen/bobgen-helpers"
+	"github.com/aronsx/bob/gen/bobgen-sqlite/driver/parser"
+	"github.com/aronsx/bob/gen/drivers"
 	"github.com/stephenafamo/scan"
 	"github.com/stephenafamo/scan/stdscan"
 	"github.com/volatiletech/strmangle"

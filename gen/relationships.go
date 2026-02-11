@@ -5,9 +5,9 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
-	"github.com/stephenafamo/bob/orm"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
+	"github.com/aronsx/bob/orm"
 )
 
 const selfJoinSuffix = "__self_join_reverse"

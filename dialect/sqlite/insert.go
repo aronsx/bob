@@ -1,8 +1,8 @@
 package sqlite
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/sqlite/dialect"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/sqlite/dialect"
 )
 
 func Insert(queryMods ...bob.Mod[*dialect.InsertQuery]) bob.BaseQuery[*dialect.InsertQuery] {

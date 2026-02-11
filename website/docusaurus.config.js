@@ -47,7 +47,7 @@ const config = {
         docs: {
           path: "./docs",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/stephenafamo/bob/tree/main/website/",
+          editUrl: "https://github.com/aronsx/bob/tree/main/website/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -140,12 +140,12 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/stephenafamo/bob",
+            href: "https://github.com/aronsx/bob",
             label: "GitHub",
             position: "right",
           },
           {
-            href: "https://pkg.go.dev/github.com/stephenafamo/bob",
+            href: "https://pkg.go.dev/github.com/aronsx/bob",
             label: "Reference",
             position: "right",
           },
@@ -169,7 +169,7 @@ const config = {
         path: "./vs",
         routeBasePath: "vs",
         sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://github.com/stephenafamo/bob/tree/main/website/",
+        editUrl: "https://github.com/aronsx/bob/tree/main/website/",
       },
     ],
     [

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
 )
 
 type StmtInfo struct {

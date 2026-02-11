@@ -1,9 +1,9 @@
 package psql
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/psql/dialect"
-	"github.com/stephenafamo/bob/expr"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/psql/dialect"
+	"github.com/aronsx/bob/expr"
 )
 
 func RawQuery(q string, args ...any) bob.BaseQuery[expr.Clause] {

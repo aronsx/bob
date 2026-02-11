@@ -1,9 +1,9 @@
 {{if $.Relationships.Get .Table.Key -}}
 {{$.Importer.Import "fmt" -}}
 {{$.Importer.Import "context" -}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "github.com/stephenafamo/bob/orm" -}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/sm" $.Dialect) -}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob/orm" -}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/sm" $.Dialect) -}}
 
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key -}}

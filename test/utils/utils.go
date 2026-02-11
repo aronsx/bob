@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/aronsx/bob"
 	"github.com/google/go-cmp/cmp"
-	"github.com/stephenafamo/bob"
 	"github.com/stephenafamo/scan"
 )
 

@@ -1,10 +1,10 @@
 package vm
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/clause"
-	"github.com/stephenafamo/bob/dialect/psql/dialect"
-	"github.com/stephenafamo/bob/mods"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/clause"
+	"github.com/aronsx/bob/dialect/psql/dialect"
+	"github.com/aronsx/bob/mods"
 )
 
 func RowValue(clauses ...bob.Expression) bob.Mod[*dialect.ValuesQuery] {

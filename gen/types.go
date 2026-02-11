@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/stephenafamo/bob/gen/drivers"
+	"github.com/aronsx/bob/gen/drivers"
 )
 
 func isPrimitiveType(name string) bool {

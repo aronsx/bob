@@ -1,4 +1,4 @@
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s" $.Dialect)}}
 
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key -}}

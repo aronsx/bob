@@ -1,10 +1,10 @@
 package mysql
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/mysql/dialect"
-	"github.com/stephenafamo/bob/expr"
-	"github.com/stephenafamo/bob/mods"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/mysql/dialect"
+	"github.com/aronsx/bob/expr"
+	"github.com/aronsx/bob/mods"
 )
 
 type Expression = dialect.Expression

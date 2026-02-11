@@ -1,7 +1,7 @@
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key -}}
 {{if $.Relationships.Get $table.Key -}}
-  {{$.Importer.Import "github.com/stephenafamo/bob"}}
+  {{$.Importer.Import "github.com/aronsx/bob"}}
   {{$.Importer.Import "context"}}
 {{end}}
 
@@ -70,8 +70,8 @@ func (os {{$tAlias.UpSingular}}Slice) {{relQueryMethodName $tAlias $relAlias}}(m
     }
     PKArgExpr := {{$.Dialect}}.Group(PKArgSlice...)
   {{else}}
-    {{$.Importer.Import "github.com/stephenafamo/bob/types/pgtypes"}}
-    {{$.Importer.Import "github.com/stephenafamo/bob/dialect/psql/sm"}}
+    {{$.Importer.Import "github.com/aronsx/bob/types/pgtypes"}}
+    {{$.Importer.Import "github.com/aronsx/bob/dialect/psql/sm"}}
 		{{- range $index, $local := $firstSide.FromColumns -}}
       {{ $column := $.Table.GetColumn $local }}
       {{ $colTyp := $.Types.GetNullable $.CurrentPackage $.Importer $column.Type $column.Nullable }}

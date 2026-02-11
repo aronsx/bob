@@ -7,10 +7,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/stephenafamo/bob/gen"
-	helpers "github.com/stephenafamo/bob/gen/bobgen-helpers"
-	"github.com/stephenafamo/bob/gen/bobgen-psql/driver"
-	"github.com/stephenafamo/bob/gen/plugins"
+	"github.com/aronsx/bob/gen"
+	helpers "github.com/aronsx/bob/gen/bobgen-helpers"
+	"github.com/aronsx/bob/gen/bobgen-psql/driver"
+	"github.com/aronsx/bob/gen/plugins"
 	"github.com/urfave/cli/v2"
 )
 

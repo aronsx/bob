@@ -1,8 +1,8 @@
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
 
 // Set the testDB to enable tests that use the database
 {{if eq $.Driver "github.com/jackc/pgx/v5" -}}
-{{- $.Importer.Import "bobpgx" "github.com/stephenafamo/bob/drivers/pgx" -}}
+{{- $.Importer.Import "bobpgx" "github.com/aronsx/bob/drivers/pgx" -}}
 var testDB bob.Transactor[bobpgx.Tx]
 {{- else -}}
 var testDB bob.Transactor[bob.Tx]
@@ -81,7 +81,7 @@ var testDB bob.Transactor[bob.Tx]
     el.err = msg
   }
 {{else}}
-  {{$.Importer.Import "testutils" "github.com/stephenafamo/bob/test/utils"}}
+  {{$.Importer.Import "testutils" "github.com/aronsx/bob/test/utils"}}
   func formatQuery(query string) (string, error) {
     return testutils.Clean(query), nil
   }

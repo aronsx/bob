@@ -6,7 +6,7 @@
 {{$.Importer.Import "testing"}}
 {{$.Importer.Import "models" (index $.OutputPackages "models") }}
 {{$.Importer.Import "factory" (index $.OutputPackages "factory") }}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
 
 func Test{{$tAlias.UpSingular}}UniqueConstraintErrors(t *testing.T) {
 	if testDB == nil {

@@ -945,7 +945,7 @@ func TestQueryWithWhere(t *testing.T) {
 	}
 
 	// Query with multiple Where conditions
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/psql/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/psql/sm"}}
 	videos, err = models.Videos.Query(
 		models.SelectWhere.Videos.UserID.EQ(user.ID),
 		models.SelectWhere.Videos.ID.GT(videoIDs[0]),
@@ -981,7 +981,7 @@ func TestQueryWithOrderBy(t *testing.T) {
 	}
 
 	// Query with ORDER BY DESC
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/psql/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/psql/sm"}}
 	users, err := models.Users.Query(
 		sm.OrderBy(models.Users.Columns.ID).Desc(),
 	).All(ctx, tx)
@@ -1029,7 +1029,7 @@ func TestQueryWithLimitOffset(t *testing.T) {
 	New().NewUserWithContext(ctx).CreateManyOrFail(ctx, t, tx, 10)
 
 	// Query with limit
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/psql/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/psql/sm"}}
 	users, err := models.Users.Query(
 		sm.Limit(5),
 		sm.OrderBy(models.Users.Columns.ID).Asc(),
@@ -1138,7 +1138,7 @@ func TestQueryWithJoin(t *testing.T) {
 	}
 
 	// Query videos with join to users
-	{{$.Importer.Import "sm" "github.com/stephenafamo/bob/dialect/psql/sm"}}
+	{{$.Importer.Import "sm" "github.com/aronsx/bob/dialect/psql/sm"}}
 	videos, err := models.Videos.Query(
 		sm.InnerJoin(models.Users.Name()).On(
 			models.Videos.Columns.UserID.EQ(models.Users.Columns.ID),
