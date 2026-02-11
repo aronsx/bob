@@ -1,10 +1,10 @@
 package sqlite
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/sqlite/dialect"
-	"github.com/stephenafamo/bob/expr"
-	"github.com/stephenafamo/bob/mods"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/sqlite/dialect"
+	"github.com/aronsx/bob/expr"
+	"github.com/aronsx/bob/mods"
 )
 
 type Expression = dialect.Expression

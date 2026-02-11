@@ -4,10 +4,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/clause"
-	"github.com/stephenafamo/bob/expr"
-	"github.com/stephenafamo/bob/mods"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/clause"
+	"github.com/aronsx/bob/expr"
+	"github.com/aronsx/bob/mods"
 )
 
 type Distinct struct {

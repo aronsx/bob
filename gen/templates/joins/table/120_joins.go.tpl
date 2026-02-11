@@ -1,9 +1,9 @@
 {{if $.Relationships.Get $.Table.Key -}}
   {{$table := .Table}}
   {{$tAlias := .Aliases.Table $table.Key -}}
-  {{$.Importer.Import "github.com/stephenafamo/bob"}}
-  {{$.Importer.Import "github.com/stephenafamo/bob/mods"}}
-  {{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
+  {{$.Importer.Import "github.com/aronsx/bob"}}
+  {{$.Importer.Import "github.com/aronsx/bob/mods"}}
+  {{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
 
   type {{$tAlias.DownSingular}}Joins[Q dialect.Joinable] struct {
     typ string

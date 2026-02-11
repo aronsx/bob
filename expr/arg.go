@@ -4,8 +4,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/internal"
 )
 
 func Arg(vals ...any) bob.Expression {

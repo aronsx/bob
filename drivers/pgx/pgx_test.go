@@ -3,8 +3,8 @@ package pgx
 import (
 	"database/sql"
 
+	"github.com/aronsx/bob"
 	"github.com/jackc/pgx/v5"
-	"github.com/stephenafamo/bob"
 	"github.com/stephenafamo/scan"
 )
 

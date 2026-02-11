@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/aronsx/bob/clause"
+	"github.com/aronsx/bob/internal"
 	pg "github.com/pganalyze/pg_query_go/v6"
-	"github.com/stephenafamo/bob/clause"
-	"github.com/stephenafamo/bob/internal"
 )
 
 type combine struct {
@@ -164,7 +164,7 @@ func (w *walker) modSelectStatement(stmt *pg.Node_SelectStmt, info nodeInfo) {
 	}
 
 	if len(combines) > 0 {
-		w.imports = append(w.imports, []string{"github.com/stephenafamo/bob/clause"})
+		w.imports = append(w.imports, []string{"github.com/aronsx/bob/clause"})
 	}
 	for i := len(combines) - 1; i >= 0; i-- {
 		combine := combines[i]
@@ -211,7 +211,7 @@ func (w *walker) modSelectStatement(stmt *pg.Node_SelectStmt, info nodeInfo) {
 					case pg.LimitOption_LIMIT_OPTION_COUNT:
 						fmt.Fprintf(w.mods, "q.CombinedLimit.SetLimit(EXPR.subExpr(%d, %d))\n", start, end)
 					case pg.LimitOption_LIMIT_OPTION_WITH_TIES:
-						w.imports = append(w.imports, []string{"github.com/stephenafamo/bob/clause"})
+						w.imports = append(w.imports, []string{"github.com/aronsx/bob/clause"})
 						fmt.Fprintf(w.mods, `q.CombinedFetch.SetFetch(clause.Fetch{
 								Count: EXPR.subExpr(%d, %d),
 								WithTies: true,
@@ -281,7 +281,7 @@ func (w *walker) modSelectStatement(stmt *pg.Node_SelectStmt, info nodeInfo) {
 			bobLock.Tables = []string{w.input[lockInfo.start:lockInfo.end]}
 		}
 
-		w.imports = append(w.imports, []string{"github.com/stephenafamo/bob/clause"})
+		w.imports = append(w.imports, []string{"github.com/aronsx/bob/clause"})
 		fmt.Fprintf(w.mods, "q.AppendLock(%#v)\n", bobLock)
 	}
 }

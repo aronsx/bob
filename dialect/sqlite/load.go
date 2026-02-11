@@ -1,9 +1,9 @@
 package sqlite
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/sqlite/dialect"
-	"github.com/stephenafamo/bob/orm"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/sqlite/dialect"
+	"github.com/aronsx/bob/orm"
 )
 
 type (

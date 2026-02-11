@@ -17,7 +17,7 @@
 
 {{define "setter_insert_mod" -}}
 {{$.Importer.Import "io"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key -}}
 func (s *{{$tAlias.UpSingular}}Setter) Apply(q *dialect.InsertQuery) {
@@ -53,7 +53,7 @@ func (s {{$tAlias.UpSingular}}Setter) UpdateMod() bob.Mod[*dialect.UpdateQuery] 
 {{define "one_update" -}}
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key -}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/um" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/um" $.Dialect)}}
 // Update uses an executor to update the {{$tAlias.UpSingular}}
 func (o *{{$tAlias.UpSingular}}) Update(ctx context.Context, exec bob.Executor, s *{{$tAlias.UpSingular}}Setter) error {
 	_, err := {{$tAlias.UpPlural}}.Update(s.UpdateMod(), um.Where(o.pkEQ())).Exec(ctx, exec)

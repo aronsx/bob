@@ -1,7 +1,7 @@
 package expr
 
 import (
-	"github.com/stephenafamo/bob"
+	"github.com/aronsx/bob"
 )
 
 type builder[B any] interface {

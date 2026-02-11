@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/mysql/dialect"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/mysql/dialect"
 )
 
 type intoChain struct {

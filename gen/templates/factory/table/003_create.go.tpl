@@ -1,6 +1,6 @@
 {{if .Table.Constraints.Primary}}
 {{$.Importer.Import "testing"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
 {{$.Importer.Import "models" (index $.OutputPackages "models") }}
 {{$table := .Table}}
 {{$tAlias := .Aliases.Table $table.Key}}

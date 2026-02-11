@@ -8,12 +8,12 @@ import (
 	"strings"
 	"sync/atomic"
 
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/gen/bobgen-helpers/parser"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/gen/language"
+	"github.com/aronsx/bob/internal"
 	pg "github.com/pganalyze/pg_query_go/v6"
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/gen/bobgen-helpers/parser"
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/gen/language"
-	"github.com/stephenafamo/bob/internal"
 	pgparse "github.com/wasilibs/go-pgquery"
 )
 

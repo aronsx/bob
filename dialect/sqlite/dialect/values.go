@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/stephenafamo/bob"
+	"github.com/aronsx/bob"
 )
 
 // Trying to represent the row value as documented in

@@ -7,10 +7,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/gen/language"
-	"github.com/stephenafamo/bob/internal"
-	"github.com/stephenafamo/bob/orm"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/gen/language"
+	"github.com/aronsx/bob/internal"
+	"github.com/aronsx/bob/orm"
 	"github.com/volatiletech/strmangle"
 )
 
@@ -386,7 +386,7 @@ func (a QueryArg) ToExpression(i language.Importer, dialect, queryName, varName 
 			return fmt.Sprintf("expr.ToArgs(%s...)", varName)
 		}
 
-		i.Import("github.com/stephenafamo/bob/dialect/" + dialect)
+		i.Import("github.com/aronsx/bob/dialect/" + dialect)
 		return fmt.Sprintf("%s.Arg(%s)", dialect, varName)
 	}
 

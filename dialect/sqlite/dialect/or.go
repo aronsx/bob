@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/stephenafamo/bob"
+	"github.com/aronsx/bob"
 )
 
 type or struct {

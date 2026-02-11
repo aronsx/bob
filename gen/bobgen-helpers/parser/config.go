@@ -3,8 +3,8 @@ package parser
 import (
 	"strings"
 
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
 )
 
 // ParseQueryConfig parses a user configuration string into a QueryCoonfig.

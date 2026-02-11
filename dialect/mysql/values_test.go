@@ -3,10 +3,10 @@ package mysql_test
 import (
 	"testing"
 
-	"github.com/stephenafamo/bob/dialect/mysql"
-	"github.com/stephenafamo/bob/dialect/mysql/sm"
-	"github.com/stephenafamo/bob/dialect/mysql/vm"
-	testutils "github.com/stephenafamo/bob/test/utils"
+	"github.com/aronsx/bob/dialect/mysql"
+	"github.com/aronsx/bob/dialect/mysql/sm"
+	"github.com/aronsx/bob/dialect/mysql/vm"
+	testutils "github.com/aronsx/bob/test/utils"
 )
 
 func TestValues(t *testing.T) {

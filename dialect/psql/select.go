@@ -1,8 +1,8 @@
 package psql
 
 import (
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/psql/dialect"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/psql/dialect"
 )
 
 func Select(queryMods ...bob.Mod[*dialect.SelectQuery]) bob.BaseQuery[*dialect.SelectQuery] {

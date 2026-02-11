@@ -6,8 +6,8 @@ import (
 	"slices"
 	"strconv"
 
+	"github.com/aronsx/bob/gen/drivers"
 	pg "github.com/pganalyze/pg_query_go/v6"
-	"github.com/stephenafamo/bob/gen/drivers"
 )
 
 type tables = drivers.Tables[any, IndexExtra]

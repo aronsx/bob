@@ -2,9 +2,9 @@
 {{$.Importer.Import "errors"}}
 {{$.Importer.Import "context"}}
 {{$.Importer.Import "database/sql"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "github.com/stephenafamo/bob/orm"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob/orm"}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
 
 var Preload = getPreloaders()
 

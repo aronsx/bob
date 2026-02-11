@@ -1,6 +1,6 @@
 {{block "helpers/where_variables" . -}}
-{{$.Importer.Import "github.com/stephenafamo/bob/clause"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
+{{$.Importer.Import "github.com/aronsx/bob/clause"}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
 var (
 	SelectWhere = Where[*dialect.SelectQuery]()
 	UpdateWhere = Where[*dialect.UpdateQuery]()
@@ -9,7 +9,7 @@ var (
 )
 {{- end}}
 
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s" $.Dialect)}}
 func Where[Q {{$.Dialect}}.Filterable]() struct {
 	{{range $table := .Tables -}}
 	{{$tAlias := $.Aliases.Table $table.Key -}}

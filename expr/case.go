@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/stephenafamo/bob"
+	"github.com/aronsx/bob"
 )
 
 type (

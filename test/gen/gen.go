@@ -16,13 +16,13 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/aronsx/bob/gen"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/gen/plugins"
 	"github.com/nsf/jsondiff"
-	"github.com/stephenafamo/bob/gen"
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/gen/plugins"
 )
 
-const module = "github.com/stephenafamo/bob/orm/bob-gen-test"
+const module = "github.com/aronsx/bob/orm/bob-gen-test"
 
 var rgxHasSpaces = regexp.MustCompile(`^\s+`)
 
@@ -212,7 +212,7 @@ func testDriver[T, C, I any](t *testing.T, dst string, tpls gen.Templates, confi
 		t.Fatalf("go mod init cmd execution failed: %s", err)
 	}
 
-	replaceFlag := fmt.Sprintf("-replace=github.com/stephenafamo/bob=%s", filepath.Dir(modPath))
+	replaceFlag := fmt.Sprintf("-replace=github.com/aronsx/bob=%s", filepath.Dir(modPath))
 	cmd = exec.CommandContext(ctx, "go", "mod", "edit", replaceFlag)
 	cmd.Dir = dst
 	cmd.Stdout = buf

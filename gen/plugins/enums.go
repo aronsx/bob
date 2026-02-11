@@ -3,9 +3,9 @@ package plugins
 import (
 	"io/fs"
 
-	"github.com/stephenafamo/bob/gen"
-	"github.com/stephenafamo/bob/gen/drivers"
-	"github.com/stephenafamo/bob/internal"
+	"github.com/aronsx/bob/gen"
+	"github.com/aronsx/bob/gen/drivers"
+	"github.com/aronsx/bob/internal"
 )
 
 func Enums[T, C, I any](config OutputConfig, templates ...fs.FS) gen.Plugin {

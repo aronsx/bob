@@ -5,11 +5,11 @@ import (
 	"context"
 	"testing"
 
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/dialect/psql/dialect"
+	"github.com/aronsx/bob/dialect/psql/sm"
+	"github.com/aronsx/bob/expr"
 	_ "github.com/lib/pq"
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/dialect/psql/dialect"
-	"github.com/stephenafamo/bob/dialect/psql/sm"
-	"github.com/stephenafamo/bob/expr"
 )
 
 type someStruct struct {

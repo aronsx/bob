@@ -3,11 +3,11 @@ package sqlite_test
 import (
 	"testing"
 
-	"github.com/stephenafamo/bob/dialect/psql"
-	"github.com/stephenafamo/bob/dialect/sqlite"
-	"github.com/stephenafamo/bob/dialect/sqlite/sm"
-	"github.com/stephenafamo/bob/dialect/sqlite/um"
-	testutils "github.com/stephenafamo/bob/test/utils"
+	"github.com/aronsx/bob/dialect/psql"
+	"github.com/aronsx/bob/dialect/sqlite"
+	"github.com/aronsx/bob/dialect/sqlite/sm"
+	"github.com/aronsx/bob/dialect/sqlite/um"
+	testutils "github.com/aronsx/bob/test/utils"
 )
 
 func TestUpdate(t *testing.T) {

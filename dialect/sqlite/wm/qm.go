@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/clause"
-	"github.com/stephenafamo/bob/dialect/sqlite/dialect"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/clause"
+	"github.com/aronsx/bob/dialect/sqlite/dialect"
 )
 
 func BasedOn(name string) bob.Mod[*clause.Window] {

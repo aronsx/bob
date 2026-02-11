@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/stephenafamo/bob"
-	"github.com/stephenafamo/bob/clause"
+	"github.com/aronsx/bob"
+	"github.com/aronsx/bob/clause"
 )
 
 // Trying to represent the query structure as documented in

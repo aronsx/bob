@@ -8,11 +8,11 @@
 
 {{if $hasToMany -}}
 {{$.Importer.Import "context"}}
-{{$.Importer.Import "github.com/stephenafamo/bob"}}
-{{$.Importer.Import "github.com/stephenafamo/bob/orm"}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s" $.Dialect)}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/dialect" $.Dialect)}}
-{{$.Importer.Import (printf "github.com/stephenafamo/bob/dialect/%s/sm" $.Dialect)}}
+{{$.Importer.Import "github.com/aronsx/bob"}}
+{{$.Importer.Import "github.com/aronsx/bob/orm"}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/dialect" $.Dialect)}}
+{{$.Importer.Import (printf "github.com/aronsx/bob/dialect/%s/sm" $.Dialect)}}
 
 // {{$tAlias.DownSingular}}C is where relationship counts are stored.
 type {{$tAlias.DownSingular}}C struct {

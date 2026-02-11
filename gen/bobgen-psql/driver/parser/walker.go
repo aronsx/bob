@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync/atomic"
 
+	"github.com/aronsx/bob/internal"
 	pg "github.com/pganalyze/pg_query_go/v6"
-	"github.com/stephenafamo/bob/internal"
 )
 
 const (

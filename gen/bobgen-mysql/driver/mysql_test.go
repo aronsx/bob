@@ -9,12 +9,12 @@ import (
 	"os"
 	"testing"
 
+	"github.com/aronsx/bob/gen"
+	helpers "github.com/aronsx/bob/gen/bobgen-helpers"
+	"github.com/aronsx/bob/gen/drivers"
+	testfiles "github.com/aronsx/bob/test/files"
+	testgen "github.com/aronsx/bob/test/gen"
 	"github.com/go-sql-driver/mysql"
-	"github.com/stephenafamo/bob/gen"
-	helpers "github.com/stephenafamo/bob/gen/bobgen-helpers"
-	"github.com/stephenafamo/bob/gen/drivers"
-	testfiles "github.com/stephenafamo/bob/test/files"
-	testgen "github.com/stephenafamo/bob/test/gen"
 	"github.com/testcontainers/testcontainers-go"
 	mysqltest "github.com/testcontainers/testcontainers-go/modules/mysql"
 )

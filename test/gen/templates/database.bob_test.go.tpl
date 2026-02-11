@@ -85,14 +85,14 @@ func TestMain(m *testing.M) {
 
   {{if eq $.Driver "github.com/jackc/pgx/v5"}}
     {{$.Importer.Import "context"}}
-    {{$.Importer.Import "bobpgx" "github.com/stephenafamo/bob/drivers/pgx"}}
+    {{$.Importer.Import "bobpgx" "github.com/aronsx/bob/drivers/pgx"}}
     var err error
     testDB, err = bobpgx.New(context.Background(), dsn)
     if err != nil {
       log.Fatalf("failed to open database connection: %v", err)
     }
   {{else}}
-    {{$.Importer.Import "github.com/stephenafamo/bob"}}
+    {{$.Importer.Import "github.com/aronsx/bob"}}
     var err error
     testDB, err = bob.Open("{{$sqlDriver}}", dsn)
     if err != nil {
